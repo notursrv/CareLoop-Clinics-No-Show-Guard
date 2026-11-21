@@ -1,0 +1,34 @@
+{
+  "source_archive": "CareLoop_Clinics_source.zip",
+  "included_source_files": [
+    "02_queries.sql",
+    "appointments_clean.csv",
+    "clinics_enriched.csv",
+    "load_data.sql",
+    "notes_analysed.csv",
+    "rejected_rows.json",
+    "test_risk_scores.csv"
+  ],
+  "verified_metrics": {
+    "appointments": 990,
+    "clinics": 8,
+    "no_shows": 218,
+    "overall_no_show_rate_percent": 22.02,
+    "test_records": 198,
+    "test_roc_auc": 0.789,
+    "test_recall": 0.571,
+    "flagged_test_records": 49
+  },
+  "genai_validation_status_counts": {
+    "invalid": 9,
+    "skipped_blank": 1
+  },
+  "missing_assignment_artifacts": [
+    "01_ingest_clean.ipynb",
+    "03_model.ipynb",
+    "04_genai.ipynb",
+    "original raw input CSV files under data/",
+    "followup_notes.csv as a separate raw input file",
+    "notes_appointments_merged.csv"
+  ]
+}
